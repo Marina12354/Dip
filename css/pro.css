@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global reset */
+html, body, body div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, font, img, s, small, strike, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, nav, section, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    list-style: none;
+}
+/* font adjusting hack */
+html * {
+    max-height: 1000000px;
+}
+/* common */
+html {
+    height: 100%;
+}
+body {
+    font: normal 16px/24px 'roboto', Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 16px;
+}
+h1 {
+    font: bold 32px/48px 'roboto';
+    color: red;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+/* icons */
+.icon::before {
+    font-family: 'icomoon';
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: white;
+    text-align: center;
+}
+.icon:hover::before {
+    color: yellow;
+}
+.logo::before {
+    content: '\e900';
+}
+.login::before {
+    content: '\e902';
+}
+.order::before {
+    content: '\e901';
+}
+.cat::before {
+    content: '\e903';
+}
+.to_left::before {
+    content: '\e905';
+}
+.to_right::before {
+    content: '\e904';
+}
+/* header */
+header {
+    flex: none;
+    background: red;
+    color: white;
+}
+.searschform {
+    background: white;
+    border-radius: 8px;
+    height: 24px;
+    padding: 6px;
+    flex: 1 1 auto;
+}
+.mainhead .container {
+    display: flex;
+    gap: 16px;
+}
+.mainhead a {
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-align: center;
+    flex: none;
+    position: relative;
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    gap: 16px;
+}
+header nav a {
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 8px;
+    flex: none;
+    text-decoration: none;
+    padding: 4px 8px;
+    color: white;
+}
+header a.active,
+header a:hover {
+    color: yellow;
+    border-color: yellow;
+    background: pink;
+}
+header .icon::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+}
+/* footer */
+footer {
+    flex: none;
+    background: gray;
+    color: white;
+}
+footer section {
+    padding: 16px 0;
+}
+.footermenu {
+    display: flex;
+    justify-content: space-between;
+}
+/* main */
+main {
+    flex: 1 1 auto;
+}
