@@ -7,13 +7,22 @@
     
     <title></title>
     
-    <link rel="stylesheet" href="css/pro.css">
+    <link rel="stylesheet" href="css/style.css">
     
     <script src="js/jquery-3.6.0.min.js"></script>
     
     <script src="js/scc.js"></script>
     
     <script src="js/pro.js"></script>
+    
+    <script>
+    let tovar = {
+        id: 4,
+        name: 'Капибара 5',
+        price: 100500,
+        qty: 1
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -40,5 +49,120 @@
             </nav>
         </section>
     </header>
+    
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <aside class="catmenu">
+                    <div class="opener">КАТАЛОГ <span class="icon cat"></span></div>
+                    <nav class="accordeon">
+                        <ul>
+                            <li class="sub">
+                                <a href="catalog.html">Букеты</a>
+                                <ul>
+                                    <li><a href="product.html">b1</a></li>
+                                    <li><a href="#">b2</a></li>
+                                    <li><a href="#">b3</a></li>
+                                    <li><a href="#">b4</a></li>
+                                    <li><a href="#">b5</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Кактусы</a>
+                                <ul>
+                                    <li><a href="#">k</a></li>
+                                    <li><a href="#">k2</a></li>
+                                    <li><a href="#">k3</a></li>
+                                    <li><a href="#">k4</a></li>
+                                </ul>
+                            </li>
+                             <li class="sub">
+                                <a href="#">Орхидеи</a>
+                                <ul>
+                                    <li><a href="#">o</a></li>
+                                    <li><a href="#">o2</a></li>
+                                    <li><a href="#">o3</a></li>
+                                    <li><a href="#">o4</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Наборы</a>
+                                <ul>
+                                    <li><a href="#">opt</a></li>
+                                    <li><a href="#">opt2</a></li>
+                                    <li><a href="#">opt3</a></li>
+                                    <li><a href="#">opt4</a></li>
+                                    <li><a href="#">opt5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <article>
+                    <h1>Карточка товара</h1>
+                    
+                    <div class="imagedesk">
+                        <div class="bigimage">
+                            <img src="./img/b1.jpg" alt="букет из роз">
+                        </div>
+                        <div class="mini">
+                            <div>
+                                <div class="rail">
+                                    <img src="./img/b1.jpg" alt="">
+                                    <img src="./img/b2.jpg" alt="">
+                                    <img src="./img/b3.jpg" alt="">
+                                    <img src="./img/b4.jpg" alt="">
+                                    <img src="./img/b5.jpg" alt="">
+                                    <img src="./img/opt.jpg" alt="">
+                                    <img src="./img/opt2.jpg" alt="">
+                                    <img src="./img/opt3.jpg" alt="">
+                                    <img src="./img/opt4.jpg" alt="">
+                                    <img src="./img/opt5.jpg" alt="">
+                                </div>
+                            </div>
+                            <span class="gal_left">&#8249;</span>
+                            <span class="gal_right disabled">&#8250;</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pricedesk">
+                        <p class="big">Букет</p>
+                        <p class="price">5000 &#8381;</p>
+                        <button type="button" class="buy">Купить</button>
+                    </div>
+                
+                    <div class="descriptions"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    
+    
+    <footer>
+        <hr class="footer-area_hr">
+            <div class="row">
+                <div class="colc">
+                    <span class="lable">&copy; Служба круглосуточной доставки цветов <br> Радуга, 2022</span>  
+                </div>
+                <div class="col1">
+                    <span class="lable">Цветочный магазин в г.Москва</span>
+                    <div class="mb">
+                        <span>г.Москва, ул.Петровка, 2</span>
+                    </div>
+                </div>
+                <div class="colc">
+                    <div class="text">
+                        <span class="lable">По любым вопросам <br><a class="foo" href="mailto:info@rus-site.ru">info@rus-site.ru</a></span></div>
+                </div>
+            </div>
+        <hr class="footer-area_hr">
+            <div class="row">
+                <div class="colc">
+                    <span class="lable">All rights reserved <br>Made with by Mary</span></div>
+                    <a class="goTop" href="#">Go to top</a>
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
