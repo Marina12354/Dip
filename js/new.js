@@ -32,8 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const $hours = document.querySelector('.timer__hours');
     const $minutes = document.querySelector('.timer__minutes');
     const $seconds = document.querySelector('.timer__seconds');
-    // вызываем функцию countdownTimer
-    countdownTimer();
+   
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
   });
+  
+  

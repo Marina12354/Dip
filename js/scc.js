@@ -284,3 +284,4 @@ function addTovar(tovar){
     }
     localStorage.setItem('addTovar', JSON.stringify(basket));
 
+}
